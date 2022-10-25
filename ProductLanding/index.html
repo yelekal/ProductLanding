@@ -30,13 +30,14 @@
       <nav id="nav-bar">
         <ul>
           <li><a href="#home" class="nav-link"></a>Home</li>
-          <li><a href="#about" class="nav-link"></a>About</li>
-          <li><a href="#help" class="nav-link"></a>Help</li>
+          <li><a href="#header" class="nav-link"></a>About</li>
+          <li><a href="#email" class="nav-link"></a>Help</li>
         </ul>
       </nav>
     </header>
-    <section>
-      <iframe id="video"
+    <section id="home">
+      <iframe
+        id="video"
         width="966"
         height="543"
         src="https://www.youtube.com/embed/t6IkpDVVJzM"
@@ -46,10 +47,16 @@
         allowfullscreen
       ></iframe>
     </section>
-    <section>
-     <form id="form">
-        <input type="email" id="email" name="email" placeholder="Enter your email please!">
-     </form> 
+    <section id="about">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email please!"
+        />
+        <input id="submit" type="submit" name="submit" value="submit" />
+      </form>
     </section>
     <script src="js/index.js"></script>
   </body>
